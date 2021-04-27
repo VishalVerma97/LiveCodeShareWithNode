@@ -27,11 +27,8 @@ li {
   text-align: center;
   margin: auto 0;
   font-size: 1.2rem;
-}
-
-li > a {
-  text-decoration: unset;
   color: white;
+  cursor: pointer;
 }
 
 li:first-child {
@@ -46,7 +43,7 @@ li:nth-last-child(2) {
   text-align: end;
 }
 
-#loginForm, #registerForm, #contactForm {
+#loginForm, #registerForm, #contactForm, #homeForm {
   width: 60%;
   position: absolute;
   height: 60%;
@@ -63,7 +60,8 @@ li:nth-last-child(2) {
 
 .form-field {
   box-sizing: border-box;
-  margin-bottom: 1rem;
+  width: 50%;
+  margin: 0 auto 1rem;
 }
 
 input {
@@ -99,4 +97,18 @@ button {
   background-color: #007bff;
   border-color: #007bff;
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  box-sizing: border-box;
 }

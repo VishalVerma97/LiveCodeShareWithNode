@@ -13,36 +13,31 @@
     <div>
       <div class="navbar">
         <ul>
-          <li>
-            <a href="/">
-              LiveShare
-            </a>
+          <li id="appItem">
+            LiveShare
           </li>
-          <li>
-            <a href="/">
-              Home
-            </a>
+          <li id="homeItem">
+            Home
           </li>
-          <li>
-            <a href="./login.html">
-              Contact
-            </a>
+          <li id="contactItem">
+            Contact
           </li>
-          <li>
-            <a href="./login.html">
-              Login
-            </a>
+          <li id="loginItem">
+            Login
           </li>
-          <li>
-            <a href="./login.html">
-              Register
-            </a>
+          <li id="registerItem">
+            Register
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- <div id="loginForm">
+    <div id="homeForm">
+      <h2>LiveShare</h2>
+      is a live code sharing application between participants after creating their respective accounts
+    </div>
+
+    <div id="loginForm" style="display: none;">
       <form novalidate class="form">
         <h2>
           Login
@@ -55,36 +50,41 @@
         </div>
         <button>Login</button>
       </form>
-    </div> -->
+    </div>
 
-    <div id="registerForm">
+    <div id="registerForm" style="display: none;">
       <form novalidate class="form">
-        <div>
-          <input type="text" />
+        <div class="form-field">
+          <input type="text" placeholder="Enter Name"/>
         </div>
-        <div>
-          <input type="email" />
+        <div class="form-field">
+          <input type="email" placeholder="Enter Email"/>
         </div>
-        <div>
-          <input type="password" />
+        <div class="form-field">
+          <input type="password" placeholder="Enter Password"/>
         </div>
         <button>Register</button>
       </form>
     </div>
 
-    <!-- <div id="contactForm">
+    <div id="contactForm" style="display: none;">
       <form novalidate class="form">
-        <div>
-          <input type="text"/>
+        <h2>
+          Send Your Query
+        </h2>
+        <div class="form-field">
+          <input type="text" placeholder="Enter Your Name"/>
         </div>
-        <div>
-          <input type="email" />
+        <div class="form-field">
+          <input type="email" placeholder="Enter Your Email"/>
         </div>
-        <div>
-          <textarea rows="4" cols="5"></textarea>
+        <div class="form-field">
+          <textarea rows="4" cols="5" placeholder="Enter Message"></textarea>
         </div>
+        <button>Submit</button>
       </form>
-    </div> -->
+    </div>
 
+    <script src="/templates/home.js" type="text/javascript"></script>
   </body>
 </html>
