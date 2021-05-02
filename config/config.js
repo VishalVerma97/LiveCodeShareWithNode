@@ -26,4 +26,6 @@ config = {
   ...envConfig
 }
 
+console.log('thse are config', config);
+
 module.exports = config;

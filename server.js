@@ -16,7 +16,7 @@ app.use('/', api);
 // setting global error logger
 app.use(function(err, req, res, next) {
   logger.log(err);
-  res.status(500).send('Oops');
+  res.status(500).send(err.message);
 });
 
 module.exports = app;
